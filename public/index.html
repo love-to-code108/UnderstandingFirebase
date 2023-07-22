@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning Firebase</title>
 </head>
+
 <body>
-    
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyD1PrmsMsVImlUxfZKN0i2miCMRNirYe4E",
+            authDomain: "learningfirebase-a65ca.firebaseapp.com",
+            projectId: "learningfirebase-a65ca",
+            storageBucket: "learningfirebase-a65ca.appspot.com",
+            messagingSenderId: "816148684355",
+            appId: "1:816148684355:web:b9c07f6356012ec3c5bef6"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js" defer></script>
 </body>
+
 </html>
